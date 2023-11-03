@@ -23,7 +23,7 @@ selected_model = st.sidebar.selectbox('Choose a Llama2 model', ['Llama2-7B', 'Ll
 if selected_model == 'Llama2-7B':
         llm = 'a16z-infra/llama7b-v2-chat:4f0a4744c7295c024a1de15e1a63c880d3da035fa1f49bfd344fe076074c8eea'
 elif selected_model == 'Llama2-13B':
-        llm = 'a16z-infra/llama13b-v2-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5'
+        llm = 'meta/llama-2-13b-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5'
 elif selected_model == 'Llama2-70B':
         llm = 'meta/llama-2-70b-chat:02e509c789964a7ea8736978a43525956ef40397be9033abf9fd2badfe68c9e3'
 temperature = st.sidebar.slider('temperature', min_value=0.01, max_value=5.0, value=2.0, step=0.01)
